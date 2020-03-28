@@ -42,4 +42,6 @@ formatter.utc = (str?: string, date?: Date): string => {
   return formatter(str, date, true);
 };
 
+formatter.name = "date-formatter";
+
 export default formatter;
