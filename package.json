@@ -11,7 +11,9 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "build": "rollup -c",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "codecov": "cat ./coverage/lcov.info | codecov",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "files": [
     "cjs",

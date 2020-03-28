@@ -7,8 +7,8 @@ cache:
 before_script:
   - yarn add codecov.io coveralls
 after_success:
-  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - yarn run codecov
+  - yarn run coveralls
 script:
   - yarn run build
   - yarn run test
