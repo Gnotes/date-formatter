@@ -1,4 +1,4 @@
-const formatter = require("../core/index.js");
+const formatter = require("../core/index.min.js");
 
 test("should return the default formatter", () => {
   const date = new Date();
