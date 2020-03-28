@@ -1,0 +1,49 @@
+{
+  "name": "@xinghe/date-formatter",
+  "version": "0.1.0",
+  "description": "A javascript function `formatter`for date format copy from @uiw/formatter, Just test for CI.",
+  "main": "core/index.min.js",
+  "module": "core/index.esm.js",
+  "cjs": "core/index.cjs.js",
+  "typings": "core/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "files": [
+    "cjs",
+    "esm",
+    "dist"
+  ],
+  "keywords": [
+    "date-formatter",
+    "formatter",
+    "date",
+    "uiw"
+  ],
+  "author": "Xing.he <1245036094@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gnotes/date-formatter.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "bannerjs": "^1.0.7",
+    "jest": "^25.1.0",
+    "rollup": "^2.1.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.21.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^3.8.3"
+  }
+}
