@@ -1,4 +1,4 @@
-const formatter = require("../core/index.min.js");
+const formatter = require("../core/index.cjs.js");
 
 test("should return the default formatter", () => {
   const date = new Date();
@@ -73,4 +73,9 @@ test("should increment zero-based month:", () => {
 test("should not increment one-based methods:", () => {
   var expected = String(new Date().getUTCFullYear());
   expect(formatter("YYYY")).toEqual(expected);
+});
+
+test("the version of formatter should be 0.1.0:", () => {
+  var expected = "0.1.0";
+  expect(formatter.version).toEqual(expected);
 });
